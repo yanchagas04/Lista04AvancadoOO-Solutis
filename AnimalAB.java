@@ -5,6 +5,9 @@ public abstract class AnimalAB implements AnimalIF {
     private String habitat;
     private double peso;
     private double altura;
+    private int comidaConsumida;
+    private int horasDormidas;
+    private double distanciaPercorrida;
     
     public AnimalAB(String nome, int idade, String tipoAnimal, String habitat, double peso, double altura) {
         this.nome = nome;
@@ -13,6 +16,9 @@ public abstract class AnimalAB implements AnimalIF {
         this.habitat = habitat;
         this.peso = peso;
         this.altura = altura;
+        this.comidaConsumida = 0;
+        this.horasDormidas = 0;
+        this.distanciaPercorrida = 0;
     }
 
     
@@ -29,6 +35,8 @@ public abstract class AnimalAB implements AnimalIF {
     public void dormir(int horasDormidas){
 
     }
+
+    
 
     public String getNome() {
         return nome;
@@ -76,6 +84,42 @@ public abstract class AnimalAB implements AnimalIF {
 
     public void setAltura(double altura) {
         this.altura = altura;
+    }
+
+
+
+    public int getComidaConsumida() {
+        return comidaConsumida;
+    }
+
+
+
+    public void setComidaConsumida(int comidaConsumida) {
+        this.comidaConsumida = comidaConsumida;
+    }
+
+
+
+    public int getHorasDormidas() {
+        return horasDormidas;
+    }
+
+
+
+    public void setHorasDormidas(int horasDormidas) {
+        this.horasDormidas = horasDormidas;
+    }
+
+
+
+    public double getDistanciaPercorrida() {
+        return distanciaPercorrida;
+    }
+
+
+
+    public void setDistanciaPercorrida(double distanciaPercorrida) {
+        this.distanciaPercorrida = distanciaPercorrida;
     }
 
 }
